@@ -20,7 +20,6 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavbarComponent {
   constructor() { }
 
- 
 
   isResponsiveMenuOpen: boolean = false;
   burgerMenu: any = 'assets/img/burger-menu.svg';
