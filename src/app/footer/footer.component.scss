@@ -1,0 +1,76 @@
+$darkblue: #141D2F;
+$green: #70E61C;
+$purple: #9747FF;
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid $green;
+    width: 100%;
+    min-height: 250px;
+    padding: 0px 100px;
+    color: white;
+
+    .name {
+        height: 35px;
+        width: 170px;
+        object-fit: contain;
+    }
+
+    .social-icons img {
+        height: 35px;
+        width: 35px;
+        object-fit: cover;
+        transition: transform 0.1s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.25);
+        }
+    }
+}
+
+.mt {
+    margin-top: 15px !important;
+}
+
+.underline-hover {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 400;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.underline-hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $purple;
+    transition: width 0.3s, left 0.3s;
+}
+
+.underline-hover:hover {
+    color: $green;
+}
+
+.underline-hover:hover::before {
+    width: 50%;
+    left: 0;
+}
+
+/**************************  Responsive  ***********************************************/
+
+@media(max-width:1070px) {
+    .main {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 40px 20px !important;
+        gap: 30px !important;
+    }
+}
