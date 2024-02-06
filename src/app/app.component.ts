@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {TranslateService} from "@ngx-translate/core";
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -29,7 +28,7 @@ import { FooterComponent } from './footer/footer.component';
 
 export class AppComponent {
   title = 'portfolio-page';
-  constructor(public translate: TranslateService) {
+  constructor() {
   }
 
 }

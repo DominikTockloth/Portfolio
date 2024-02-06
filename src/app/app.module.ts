@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -34,21 +32,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         BrowserModule,
         RouterModule,
         BrowserAnimationsModule,
-        HttpClientModule,
-        TranslateModule.forRoot({
-            defaultLanguage: 'en',
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
-        }),
     ],
-    providers: [ TranslateService],
-})
-export class AppModule { }
 
-// AoT requires an exported function for factories
-export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+    bootstrap: [AppComponent],
+})
+export class AppModule {
+
 }
+

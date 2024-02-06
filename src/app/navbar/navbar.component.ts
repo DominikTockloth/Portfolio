@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { slideInRightOnEnterAnimation, slideOutRightOnLeaveAnimation } from 'angular-animations';
 import { TranslateService } from '@ngx-translate/core';
 
 
@@ -11,10 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
   selector: 'app-navbar',
   standalone: true,
   imports: [CommonModule],
-  animations: [
-    slideInRightOnEnterAnimation({ duration: 300 }),
-    slideOutRightOnLeaveAnimation({ duration: 500 })
-  ],
+  animations: [],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -22,11 +18,9 @@ import { TranslateService } from '@ngx-translate/core';
 
 
 export class NavbarComponent {
-  constructor(public translate: TranslateService) { }
+  constructor() { }
 
-  useLanguage(language: string): void {
-    this.translate.use(language);
-  }
+ 
 
   isResponsiveMenuOpen: boolean = false;
   burgerMenu: any = 'assets/img/burger-menu.svg';
@@ -49,9 +43,6 @@ export class NavbarComponent {
 
   toggleLanguage() {
     this.isTranslatedGerman = !this.isTranslatedGerman;
-
-    this.translate.setDefaultLang(this.isTranslatedGerman ? 'de' : 'en');
-    this.translate.use(this.isTranslatedGerman ? 'de' : 'en');
 
     if (this.isTranslatedGerman) {
       this.germanFlag = this.britishFlag;
