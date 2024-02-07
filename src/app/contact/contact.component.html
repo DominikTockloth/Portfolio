@@ -59,6 +59,8 @@
             <div class="btn-container"><button class="disabled" [class.disabled]="contactForm.invalid">Send message
                     : ) </button></div>
             <div class="scroll-up"><a href="#navbar"><img src="./../../assets/img/scroll-ub-arrow.png"></a></div>
+
+            <div class="success-email" *ngIf="isSubmitted">Your e-mail has been sent successfully</div>
         </form>
 
 

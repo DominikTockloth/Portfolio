@@ -37,9 +37,12 @@ export class ContactComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
+      this.isSubmitted = true;
       // Formular ist gültig, hier können Sie die Sendelogik implementieren
       console.log('Formular ist gültig, sende Nachricht:', this.contactForm);
-      this.clearForm();
+      setTimeout(( )=>{
+        this.clearForm();
+      },3000)
     } else {
       // Markieren Sie die Formularfelder, die nicht gültig sind
       Object.keys(this.contactForm.controls).forEach(field => {

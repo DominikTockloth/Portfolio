@@ -229,6 +229,24 @@ $purple: #9747FF;
     }
 }
 
+.success-email {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $darkblue;
+    opacity: 0.7;
+    color: white;
+    font-size: 65px;
+    font-weight: 700;
+}
+
 //************************  Responsive  ***************************************//
 
 @media(max-width:1050px) {
