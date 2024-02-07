@@ -9,8 +9,14 @@ $purple: #9747FF;
     border-top: 4px solid $green;
     width: 100%;
     min-height: 250px;
+    max-height:450px ;
     padding: 0px 100px;
     color: white;
+
+    a{
+        text-decoration: none !important;
+        color: white !important;
+    }
 
     .name {
         height: 35px;

@@ -1,10 +1,11 @@
 import { Component} from '@angular/core';
-import { TranslateService } from "@ngx-translate/core";
+import { AboutMeComponent } from '../about-me/about-me.component';
+
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [],
+  imports: [AboutMeComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })

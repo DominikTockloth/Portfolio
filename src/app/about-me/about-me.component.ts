@@ -1,18 +1,16 @@
 import { Component  } from '@angular/core';
-import { TranslateService } from "@ngx-translate/core";
+import { SkillsComponent } from '../skills/skills.component';
+
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [SkillsComponent],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
 
 export class  AboutMeComponent {
-  animatedContent = false;
-  animatedImg = false;
-
   constructor() {}
 
   

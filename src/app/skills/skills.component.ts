@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { TranslateService } from "@ngx-translate/core";
+import { PortfolioSectionComponent } from '../portfolio-section/portfolio-section.component';
+
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [PortfolioSectionComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
