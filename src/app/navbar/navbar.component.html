@@ -1,5 +1,5 @@
-<nav id="navbar">
-    <div class="name"> <a href="#contact"><img src="./../../assets/img/name.png" class="name"></a></div>
+<nav>
+    <div class="name" id="navbar"> <a href="#contact"><img src="./../../assets/img/name.png" class="name"></a></div>
     <div class="links-nav">
         <div class="flags"><img src="{{ germanFlag }}" (click)="toggleLanguage()" *ngIf="germanFlag"></div>
         <div>
@@ -14,7 +14,8 @@
         *ngIf="burgerMenu" src="{{burgerMenu}}">
 </nav>
 <div class="burger-menu " *ngIf="isResponsiveMenuOpen" [@slideInRightOnEnter] [@slideOutRightOnLeave]>
-    <div class="content"> <a href="#about" (click)="toggleResponsiveMenu()" class="underline-hover" translate> About me</a>
+    <div class="content"> <a href="#about" (click)="toggleResponsiveMenu()" class="underline-hover" translate> About
+            me</a>
         <a href="#skills" (click)="toggleResponsiveMenu()" class="underline-hover" translate>My skills</a>
         <a href="#projects" (click)="toggleResponsiveMenu()" class="underline-hover">Portfolio</a>
         <a href="#contact" (click)="toggleResponsiveMenu()" class="underline-hover" translate>Contact</a>
