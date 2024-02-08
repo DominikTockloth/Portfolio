@@ -9,14 +9,19 @@ $purple: #9747FF;
     border-top: 4px solid $green;
     width: 100%;
     min-height: 250px;
-    max-height:450px ;
+    max-height: 450px;
     padding: 0px 100px;
     color: white;
 
-    a{
+    a {
         text-decoration: none !important;
         color: white !important;
+
+        &:hover {
+            color: $green !important;
+        }
     }
+
 
     .name {
         height: 35px;
@@ -36,6 +41,8 @@ $purple: #9747FF;
         }
     }
 }
+
+
 
 .mt {
     margin-top: 15px !important;

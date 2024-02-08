@@ -6,11 +6,15 @@ $purple: #9747FF;
     width: 100%;
     display: flex;
     background-color: #141D2F;
+    background-image: url('./../../assets/img/Purple\ shadow\ 1.png');
+    background-repeat: no-repeat;
+    background-position-x: 1200px;
+    background-position-y: -20px;
     color: white;
     padding-left: 100px;
     padding-top: 150px;
     padding-bottom: 150px;
-    z-index: 6;
+    z-index: 10;
 }
 
 .about-content {
@@ -47,15 +51,6 @@ $purple: #9747FF;
     }
 }
 
-.shadow-shape {
-    position: absolute;
-    height: 628px;
-    width: 475px;
-    z-index: 3;
-    top: 913px;
-    right: -175px;
-
-}
 
 .about-img {
     display: flex;
@@ -74,6 +69,7 @@ $purple: #9747FF;
             width: 460px;
             border-radius: 100%;
             border: 4px solid $green;
+            background-color: $darkblue;
         }
     }
 
@@ -82,7 +78,6 @@ $purple: #9747FF;
         height: 4px;
         width: 300px;
         z-index: 6;
-        margin-right: -10px;
     }
 }
 
@@ -103,6 +98,12 @@ $purple: #9747FF;
 
 /**************************  Responsive  ***********************************/
 @media(max-width:1350px) {
+
+    .about-me-main {
+        background-position-x: 900px !important;
+        background-position-y: -20px !important;
+    }
+
     h2 {
         font-size: 65px !important;
     }
@@ -137,7 +138,9 @@ $purple: #9747FF;
     }
 
     .about-me-main {
-
+        background-position-x: 700px !important;
+        background-position-y: 8px !important;
+        background-size: 615px !important;
         padding-top: unset !important;
         padding: 100px 100px !important;
     }
@@ -164,6 +167,22 @@ $purple: #9747FF;
     }
 }
 
+@media(max-width:800px) {
+    .about-me-main {
+        background-position-x: 700px !important;
+        background-position-y: 8px !important;
+        background-size: 615px !important;
+    }
+}
+
+@media(max-width:600px) {
+    .about-me-main {
+        background-position-x: 350px !important;
+        background-position-y: 8px !important;
+        background-size: 615px !important;
+    }
+}
+
 @media(max-width:500px) {
     .about-me-main {
         padding: 120px 20px !important;
@@ -177,4 +196,20 @@ $purple: #9747FF;
         right: -175px !important;
     }
 
+}
+
+@media(max-width:460px) {
+    .about-me-main {
+        background-position-x: 250px !important;
+        background-position-y: -65px !important;
+        background-size: 615px !important;
+    }
+}
+
+@media(max-width:380px) {
+    .about-me-main {
+        background-position-x: 190px !important;
+        background-position-y: 8px !important;
+        background-size: 615px !important;
+    }
 }
