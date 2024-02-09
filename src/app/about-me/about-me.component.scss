@@ -15,6 +15,7 @@ $purple: #9747FF;
     padding-top: 150px;
     padding-bottom: 150px;
     z-index: 10;
+
 }
 
 .about-content {
@@ -52,12 +53,12 @@ $purple: #9747FF;
 }
 
 
+/*************************  Animations  ************************************/
+
 .about-img {
     display: flex;
     flex-direction: row-reverse;
     width: 50%;
-
-
 
     >.portrait-head {
         display: flex;
@@ -81,20 +82,8 @@ $purple: #9747FF;
     }
 }
 
-/***************************  Animation scroll down *********************/
 
-.about-content.animated,
-.about-img.animated {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
 
-.about-content.animated.show,
-.about-img.animated.show {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /**************************  Responsive  ***********************************/
 @media(max-width:1350px) {

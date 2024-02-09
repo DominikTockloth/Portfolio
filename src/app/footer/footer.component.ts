@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 export class FooterComponent {
 constructor(private router:Router){}
 
+scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 
 goToImprint(): void {
   this.router.navigate(['/imprint']); // Hier '/navbar' durch den tatsächlichen Pfad zur Navbar-Seite ersetzen

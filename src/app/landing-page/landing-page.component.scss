@@ -200,6 +200,15 @@ a {
     }
 }
 
+.animate__animated.animate__bounceIn {
+    --animate-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .animate__animated.animate__flash {
+    --animate-duration: 10s;
+    animation-iteration-count: 1;
+  }
 /********************************************  Responsive  ******************************************/
 
 @media(max-width:1500px) {

@@ -1,5 +1,5 @@
 import { CommonModule, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 
 
@@ -17,16 +17,20 @@ export class ContactComponent {
   isSubmitted = false;
 
 
+  constructor(private foBu: FormBuilder, private elementRef: ElementRef) {
 
-
-  constructor(private foBu: FormBuilder) {
     this.contactForm = this.foBu.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
     });
+  }
 
+  ngOnInit(): void {
+  }
 
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   clearForm() {
@@ -40,9 +44,9 @@ export class ContactComponent {
       this.isSubmitted = true;
       // Formular ist gültig, hier können Sie die Sendelogik implementieren
       console.log('Formular ist gültig, sende Nachricht:', this.contactForm);
-      setTimeout(( )=>{
+      setTimeout(() => {
         this.clearForm();
-      },3000)
+      }, 3000)
     } else {
       // Markieren Sie die Formularfelder, die nicht gültig sind
       Object.keys(this.contactForm.controls).forEach(field => {

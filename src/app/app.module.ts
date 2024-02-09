@@ -4,9 +4,10 @@ import { RouterModule , Routes } from '@angular/router';
 import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
@@ -45,6 +46,6 @@ const routes: Routes = [
     bootstrap: [AppComponent],
 })
 export class AppModule {
-
+  
 }
 

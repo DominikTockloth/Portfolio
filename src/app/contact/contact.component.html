@@ -1,12 +1,12 @@
 <div class="main" id="contact">
-    <div class="headline-content">
+    <div class="headline-content"data-aos="fade-right"  data-aos-duration="3000">
         <div class="border"></div>
         <div class="headline">
             <h2 translate >Contact</h2>
         </div>
     </div>
     <div class="content">
-        <div class="left">
+        <div class="left" data-aos="fade-right"  data-aos-duration="3000">
             <h3 translate>Got a problem to solve?</h3>
             <p translate>Contact me through this form, I am interested in hearing you, knowing your ideas and
                 contributing to your
@@ -58,7 +58,7 @@
             </div>
             <div class="btn-container"><button class="disabled" [class.disabled]="contactForm.invalid">Send message
                     : ) </button></div>
-            <div class="scroll-up"><a href="#navbar"><img src="./../../assets/img/scroll-ub-arrow.png"></a></div>
+            <div class="scroll-up"><a (click)="scrollToTop()"><img src="./../../assets/img/scroll-ub-arrow.png"></a></div>
 
             <div class="success-email" *ngIf="isSubmitted"><span class="span-mail">Your e-mail has been sent successfully</span></div>
         </form>
