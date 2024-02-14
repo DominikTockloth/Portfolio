@@ -1,13 +1,16 @@
 import { CommonModule, NgIf } from '@angular/common';
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+
+
 
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, NgIf, ReactiveFormsModule],
+  imports: [CommonModule, NgIf, ReactiveFormsModule , TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -17,7 +20,7 @@ export class ContactComponent {
   isSubmitted = false;
 
 
-  constructor(private foBu: FormBuilder, private elementRef: ElementRef) {
+  constructor(private foBu: FormBuilder, private elementRef: ElementRef ) {
 
     this.contactForm = this.foBu.group({
       name: ['', Validators.required],

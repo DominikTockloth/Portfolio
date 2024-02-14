@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule ,TranslateModule],
   animations: [],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
@@ -15,8 +15,7 @@ import { Component } from '@angular/core';
 
 
 export class NavbarComponent {
-  constructor() { }
-
+  constructor( public translate:TranslateService) { }
 
   isResponsiveMenuOpen: boolean = false;
   burgerMenu: any = 'assets/img/burger-menu.svg';
@@ -36,17 +35,17 @@ export class NavbarComponent {
     }
   }
 
-
-  toggleLanguage() {
-    this.isTranslatedGerman = !this.isTranslatedGerman;
-
-    if (this.isTranslatedGerman) {
-      this.germanFlag = this.britishFlag;
-    } else {
-      this.germanFlag = 'assets/img/flag-ger.png';
-      this.britishFlag = 'assets/img/flag-england.png';
+  
+    toggleLanguage() {
+      this.isTranslatedGerman = !this.isTranslatedGerman;
+  
+      if (this.isTranslatedGerman) {
+        this.germanFlag = this.britishFlag;
+      } else {
+        this.germanFlag = 'assets/img/flag-ger.png';
+        this.britishFlag = 'assets/img/flag-england.png';
+      }
     }
-  }
 }
 
 

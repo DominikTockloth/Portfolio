@@ -1,23 +1,30 @@
 <nav>
     <div class="name" id="navbar"> <a href="#contact"><img src="./../../assets/img/name.png" class="name"></a></div>
-    <div class="links-nav">
-        <div class="flags"><img src="{{ germanFlag }}" (click)="toggleLanguage()" *ngIf="germanFlag"></div>
-        <div>
-
-            <a href="#about" class="underline-hover" translate>About me</a>
-            <a href="#skills" class="underline-hover" translate>Skills</a>
-            <a href="#projects" class="underline-hover">Portfolio</a>
+    <div class="links-content">
+        <div class="translate">
+            <div class="flags"><span (click)="translate.use('de');" style="margin-right: 8px;">DE</span></div> <span
+                style="font-size: 23px;">
+                |</span>
+            <div class="flags"><span (click)="translate.use('en');" style="margin-left: 8px;">EN</span></div>
         </div>
+        <div class="links-nav">
+            <div>
+                <a href="#about" class="underline-hover">{{"navAbout"|translate}}</a>
+                <a href="#skills" class="underline-hover">{{"navSkills"|translate}}</a>
+                <a href="#projects" class="underline-hover">Portfolio</a>
+            </div>
 
+        </div>
     </div>
     <img src="./../../assets/img/burger-menu.svg" class="burger-menu-icon d-none" (click)="toggleResponsiveMenu()"
         *ngIf="burgerMenu" src="{{burgerMenu}}">
 </nav>
-<div class="burger-menu " *ngIf="isResponsiveMenuOpen" [@slideInRightOnEnter] [@slideOutRightOnLeave]>
-    <div class="content"> <a href="#about" (click)="toggleResponsiveMenu()" class="underline-hover" translate> About
-            me</a>
-        <a href="#skills" (click)="toggleResponsiveMenu()" class="underline-hover" translate>My skills</a>
+<div class="burger-menu " *ngIf="isResponsiveMenuOpen">
+    <div class="content"> <a href="#about" (click)="toggleResponsiveMenu()" class="underline-hover">
+            {{"navAbout"|translate }}
+        </a>
+        <a href="#skills" (click)="toggleResponsiveMenu()" class="underline-hover">{{"skills"|translate}}</a>
         <a href="#projects" (click)="toggleResponsiveMenu()" class="underline-hover">Portfolio</a>
-        <a href="#contact" (click)="toggleResponsiveMenu()" class="underline-hover" translate>Contact</a>
+        <a href="#contact" (click)="toggleResponsiveMenu()" class="underline-hover">{{"contact"|translate}}</a>
     </div>
 </div>

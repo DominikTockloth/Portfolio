@@ -2,9 +2,6 @@ $darkblue: #141D2F;
 $green: #70E61C;
 $purple: #9747FF;
 
-
-
-
 .headline-content {
     display: flex;
     align-items: center;
@@ -13,19 +10,16 @@ $purple: #9747FF;
     padding-top: 150px;
     width: 100%;
     gap: 50px;
-
     h1 {
         font-size: 90px;
         color: white;
         margin-right: 110px;
     }
-
     .border {
         height: 4px;
         width: 110px;
         background-color: $purple;
     }
-
     .border-big {
         height: 4px;
         width: calc(40% - 100px);
@@ -59,7 +53,6 @@ $purple: #9747FF;
     padding: 0px 100px;
     margin-top: 180px;
     margin-bottom: -350px;
-
     .portfolio-content {
         display: flex;
         align-items: center;
@@ -69,25 +62,21 @@ $purple: #9747FF;
         margin-bottom: 30px;
         gap: 80px;
     }
-
     .portfolio-text {
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
-
         h3 {
             font-size: 36px;
             font-weight: 700;
             color: $purple;
             margin-bottom: 20px;
         }
-
         span {
             font-size: 27px;
             color: $green;
             margin-bottom: 20px;
         }
-
         p {
             font-size: 20px;
             color: white;
@@ -99,24 +88,16 @@ $purple: #9747FF;
         width: 550px;
         object-fit: contain;
     }
-
     .reverse {
         display: flex;
         flex-direction: row-reverse;
         text-align: right;
     }
-
-    .flex-end-btn {
+    .buttons-flex-end {
         display: flex;
         justify-content: flex-end;
-    }
-
-    .buttons {
-        display: flex;
-        justify-content: flex-start;
         gap: 80px;
         margin-top: 20px;
-
         >.test {
             font-size: 23px;
             padding: 15px 30px;
@@ -124,7 +105,6 @@ $purple: #9747FF;
             border-radius: 10px;
             text-decoration: none;
             color: white;
-
             &:hover {
                 cursor: pointer;
                 background-color: $green;
@@ -139,7 +119,39 @@ $purple: #9747FF;
             color: white;
             text-decoration: none;
             background-color: $darkblue;
+            &:hover {
+                cursor: pointer;
+                background-color: $green;
+            }
+        }
+    }
 
+    .buttons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 80px;
+        margin-top: 20px;
+        >.test {
+            font-size: 23px;
+            padding: 15px 30px;
+            background-color: $purple;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            &:hover {
+                cursor: pointer;
+                background-color: $green;
+            }
+        }
+
+        >.github {
+            font-size: 23px;
+            padding: 15px 30px;
+            border: 1px solid $green;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            background-color: $darkblue;
             &:hover {
                 cursor: pointer;
                 background-color: $green;
@@ -150,136 +162,3 @@ $purple: #9747FF;
 
 }
 
-@media(max-width:1250px) {
-    h1 {
-        font-size: 65px !important;
-    }
-}
-
-@media(max-width:1000px) {
-    .portfolio-content {
-        flex-direction: column !important;
-        gap: 0px !important;
-    }
-
-    .portfolio-main {
-        background-position-x: 590px !important;
-        background-position-y: -18px !important;
-    }
-
-    .portfolio-text {
-        text-align: center !important;
-    }
-
-    .portfolio-img {
-        margin-bottom: -70px !important;
-    }
-
-    .test {
-        font-size: 22px !important;
-    }
-
-    .github {
-        font-size: 22px !important;
-    }
-
-    .buttons {
-        justify-content: space-between !important;
-    }
-}
-
-@media(max-width:750px) {
-    h1 {
-        font-size: 50px !important;
-    }
-}
-
-@media(max-width:700px) {
-    .portfolio-main {
-        background-position-x: 295px !important;
-        background-position-y: 100px !important;
-    }
-}
-
-@media(max-width:650px) {
-    .border {
-        width: 60px !important;
-    }
-
-    .portfolio-main {
-        margin-top: 115px !important;
-        padding: 0px 20px !important;
-    }
-
-    .portfolio-content {
-        padding: 0px 60px !important;
-    }
-
-    .sub-headline {
-        justify-content: center !important;
-        font-size: 20px !important;
-        margin-bottom: -80px !important;
-        height: 65px !important;
-        padding: 0px 20px !important;
-        text-align: center !important;
-    }
-}
-
-@media(max-width:535px) {
-    .portfolio-img img {
-        height: 360px !important;
-        width: 339px !important;
-    }
-
-    .portfolio-content {
-        padding: 0px 20px !important;
-    }
-
-    .portfolio-text p {
-        font-size: 18px !important;
-    }
-
-    .buttons {
-        gap: unset !important;
-    }
-
-    .flex-end-btn {
-        justify-content: space-between !important;
-    }
-
-    .test {
-        padding: 15px 15px !important;
-        font-size: 18px !important;
-    }
-
-    .github {
-        padding: 15px 15px !important;
-        font-size: 19px !important;
-    }
-}
-
-@media(max-width:450px) {
-    h1 {
-        margin-right: unset !important;
-    }
-
-    .border {
-        display: none !important;
-    }
-}
-
-@media(max-width:500px) {
-    .portfolio-main {
-        background-position-x: 270px !important;
-        background-position-y: 340px !important;
-    }
-
-}
-
-@media(max-width:400px) {
-    .portfolio-main {
-        background-position-x: 161px !important;
-        background-position-y: 365px !important;
-    }
-
-}

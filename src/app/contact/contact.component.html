@@ -1,66 +1,61 @@
 <div class="main" id="contact">
-    <div class="headline-content"data-aos="fade-right"  data-aos-duration="3000">
+    <div class="headline-content" data-aos="fade-right" data-aos-duration="3000">
         <div class="border"></div>
         <div class="headline">
-            <h2 translate >Contact</h2>
+            <h2>{{ "contact"|translate }}</h2>
         </div>
     </div>
     <div class="content">
-        <div class="left" data-aos="fade-right"  data-aos-duration="3000">
-            <h3 translate>Got a problem to solve?</h3>
-            <p translate>Contact me through this form, I am interested in hearing you, knowing your ideas and
-                contributing to your
-                projects with my work.</p>
-            <span translate>Need a Frontend developer? <span class="fs-weight" translate>Contact me!</span></span>
+        <div class="left" data-aos="fade-right" data-aos-duration="3000">
+            <h3>{{ "problem"|translate }}</h3>
+            <p>{{ "contactText"|translate }}</p>
+            <span>{{ "developer"|translate }} <span class="fs-weight">{{ "touchOne"|translate }}</span></span>
         </div>
 
         <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="right">
             <!---------------  name field  -------------------------------->
             <div class="input-area">
-                <input required placeholder="Your name" type="text" name="name" formControlName="name"
+                <input required placeholder="{{'y-name' | translate}}" type="text" name="name" formControlName="name"
                     [ngClass]="{ 'error': contactForm.get('name')?.invalid && contactForm.get('name')?.touched }">
                 <img src="./../../assets/img/green-hook.png" class="img" *ngIf="contactForm.get('name')?.valid">
                 <img src="./../../assets/img/red-marker.png" class="img"
                     *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
                 <span class="fs-red" translate
-                    *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">Your name is
-                    required</span>
+                    *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">{{ "name"|translate
+                    }}</span>
             </div>
             <!---------------  email field  -------------------------------->
             <div class="input-area">
-                <input required placeholder="Your e-mail" type="email" name="email"
+                <input required placeholder="{{'y-mail' | translate }}" type="email" name="email"
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" formControlName="email"
                     [ngClass]="{ 'error': contactForm.get('email')?.invalid && contactForm.get('email')?.touched }">
                 <img src="./../../assets/img/green-hook.png" class="img" *ngIf="contactForm.get('email')?.valid">
                 <img src="./../../assets/img/red-marker.png" class="img"
                     *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
                 <span class="fs-red" translate
-                    *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">Your e-mail is
-                    required</span>
+                    *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">{{ "mail"|translate
+                    }}</span>
             </div>
             <!---------------  text area  -------------------------------->
             <div class="input-area">
-                <textarea required placeholder="Your message" name="message" id="message" cols="30" rows="10"
-                    formControlName="message"
+                <textarea required placeholder="{{'y-message' | translate}}" name="message" id="message" cols="30"
+                    rows="10" formControlName="message"
                     [ngClass]="{ 'error': contactForm.get('message')?.invalid && contactForm.get('message')?.touched }"></textarea>
                 <img src="./../../assets/img/green-hook.png" class="img" *ngIf="contactForm.get('message')?.valid"><img
                     src="./../../assets/img/red-marker.png" class="img"
                     *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-                <span class="fs-red " translate
-                    *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">Your message is
-                    required</span>
+                <span class="fs-red "
+                    *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">{{"message"|translate}}</span>
             </div>
-            <div class="agree"><img src="./../../assets/img/check_box-empty.png">
-                <p translate>I've read the <a href="" style="color:#9747FF ;" translate>privacy policy</a> and agree to
-                    the processing of my
-                    data
-                    as outlined.</p>
-            </div>
-            <div class="btn-container"><button class="disabled" [class.disabled]="contactForm.invalid">Send message
-                    : ) </button></div>
-            <div class="scroll-up"><a (click)="scrollToTop()"><img src="./../../assets/img/scroll-ub-arrow.png"></a></div>
+           
+            <div class="btn-container"><button class="disabled"
+                    [class.disabled]="contactForm.invalid">{{"btnContact"|translate }} </button></div>
 
-            <div class="success-email" *ngIf="isSubmitted"><span class="span-mail">Your e-mail has been sent successfully</span></div>
+            <div class="scroll-up"><a (click)="scrollToTop()"><img src="./../../assets/img/scroll-ub-arrow.png"></a>
+            </div>
+
+            <div class="success-email" *ngIf="isSubmitted"><span class="span-mail">{{"mailSent"|translate }}</span>
+            </div>
         </form>
     </div>
 </div>

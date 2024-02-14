@@ -1,12 +1,13 @@
 import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { SkillsComponent } from '../skills/skills.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [SkillsComponent],
+  imports: [SkillsComponent ,TranslateModule],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
  
@@ -15,7 +16,7 @@ import { SkillsComponent } from '../skills/skills.component';
 export class AboutMeComponent {
 
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
+  constructor(private elementRef: ElementRef, private renderer: Renderer2 ,) { }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

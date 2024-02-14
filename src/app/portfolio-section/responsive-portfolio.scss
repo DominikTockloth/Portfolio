@@ -1,0 +1,125 @@
+@media(max-width:1250px) {
+    h1 {
+        font-size: 65px !important;
+    }
+}
+
+@media(max-width:1000px) {
+    .portfolio-content {
+        flex-direction: column !important;
+        gap: 0px !important;
+    }
+
+    .portfolio-main {
+        background-position-x: 590px !important;
+        background-position-y: -18px !important;
+    }
+
+    .portfolio-text {
+        text-align: center !important;
+    }
+
+    .portfolio-img {
+        margin-bottom: -70px !important;
+    }
+
+    .test {
+        font-size: 22px !important;
+    }
+
+    .github {
+        font-size: 22px !important;
+    }
+
+    .buttons {
+        justify-content: space-between !important;
+    }
+
+    .buttons-flex-end {
+        justify-content: space-between !important;
+    }
+}
+
+@media(max-width:750px) {
+    h1 {
+        font-size: 50px !important;
+    }
+}
+
+@media(max-width:700px) {
+    .portfolio-main {
+        background-position-x: 295px !important;
+        background-position-y: 100px !important;
+    }
+}
+
+@media(max-width:650px) {
+    .border {
+        width: 60px !important;
+    }
+    .portfolio-main {
+        margin-top: 115px !important;
+        padding: 0px 20px !important;
+    }
+    .portfolio-content {
+        padding: 0px 60px !important;
+    }
+    .sub-headline {
+        justify-content: center !important;
+        font-size: 20px !important;
+        margin-bottom: -80px !important;
+        height: 65px !important;
+        padding: 0px 20px !important;
+        text-align: center !important;
+    }
+}
+
+@media(max-width:535px) {
+    .portfolio-img img {
+        height: 360px !important;
+        width: 339px !important;
+    }
+    .portfolio-content {
+        padding: 0px 20px !important;
+    }
+    .portfolio-text p {
+        font-size: 18px !important;
+    }
+    .buttons {
+        gap: unset !important;
+    }
+    .buttons-flex-end {
+        gap: unset !important;
+    }
+    .test {
+        padding: 15px 15px !important;
+        font-size: 18px !important;
+    }
+    .github {
+        padding: 15px 15px !important;
+        font-size: 19px !important;
+    }
+}
+
+@media(max-width:450px) {
+    h1 {
+        margin-right: unset !important;
+    }
+    .border {
+        display: none !important;
+    }
+}
+
+@media(max-width:500px) {
+    .portfolio-main {
+        background-position-x: 270px !important;
+        background-position-y: 340px !important;
+    }
+}
+
+@media(max-width:400px) {
+    .portfolio-main {
+        background-position-x: 161px !important;
+        background-position-y: 365px !important;
+    }
+}

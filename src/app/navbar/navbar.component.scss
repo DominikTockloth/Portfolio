@@ -15,6 +15,7 @@ nav {
     background-color: $darkblue;
     cursor: pointer;
     z-index: 10;
+    margin-right: 8px;
 
     >.name {
         height: 45px;
@@ -25,6 +26,12 @@ nav {
             cursor: pointer;
         }
     }
+}
+
+.links-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     >.links-nav {
         display: flex;
@@ -50,29 +57,29 @@ nav {
                 color: $green;
             }
         }
-
-        .hidden {
-            visibility: hidden;
-        }
     }
+}
+
+.translate {
+    display: flex;
+    align-items: center;
 }
 
 .flags {
     display: flex;
+    align-items: center;
 
-    img {
-        height: 35px;
-        width: 35px;
-        object-fit: cover;
+    span {
+        color: white;
+        text-decoration: none;
         transition: transform 0.1s ease-in-out;
+        font-weight: 400;
+        font-size: 23px;
 
         &:hover {
-            transform: scale(1.25);
+            transform: scale(1.1);
+            color: $green;
         }
-    }
-
-    .hidden {
-        visibility: hidden;
     }
 }
 
@@ -157,7 +164,6 @@ nav {
 @media(max-width:600px) {
     nav {
         padding: 37px 30px 37px 30px;
-        align-items: unset !important;
     }
 
     .name img {
@@ -167,5 +173,9 @@ nav {
     .burger-menu-icon {
         height: 25px !important;
         width: 25px !important;
+    }
+
+    .flags span {
+        font-size: 15px !important;
     }
 }

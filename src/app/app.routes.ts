@@ -9,6 +9,7 @@ import { PortfolioSectionComponent } from './portfolio-section/portfolio-section
 
 
 
+
 export const routes: Routes = [
     {path:'', component: LandingPageComponent},
     {path:'about-me', component: AboutMeComponent},
