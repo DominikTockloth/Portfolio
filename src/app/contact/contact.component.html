@@ -6,13 +6,13 @@
         </div>
     </div>
     <div class="content">
-        <div class="left" data-aos="fade-right" data-aos-duration="3000">
+        <div class="left" data-aos="fade-right" data-aos-duration="2000">
             <h3>{{ "problem"|translate }}</h3>
             <p>{{ "contactText"|translate }}</p>
             <span>{{ "developer"|translate }} <span class="fs-weight">{{ "touchOne"|translate }}</span></span>
         </div>
 
-        <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="right">
+        <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="right" data-aos="zoom-in-up" data-aos-duration="2500">
             <!---------------  name field  -------------------------------->
             <div class="input-area">
                 <input required placeholder="{{'y-name' | translate}}" type="text" name="name" formControlName="name"
