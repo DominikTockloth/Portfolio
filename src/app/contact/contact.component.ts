@@ -3,9 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-
-
-
+import { timer } from 'rxjs';
+import { take } from 'rxjs/operators';
 
 
 @Component({
@@ -19,7 +18,8 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ContactComponent {
   contactForm: FormGroup;
   isSubmitted = false;
-  mailTest = true;
+  mailSent = false;
+
 
   http = inject(HttpClient);
 
@@ -43,14 +43,10 @@ export class ContactComponent {
     },
   };
 
-
-
-
   onSubmit() {
     if (this.contactForm.valid && !this.isSubmitted) {
       // Formular ist gültig, hier können Sie die Sendelogik implementieren
-      console.log('Formular ist gültig, sende Nachricht:', this.contactForm);
-      this.http.post(this.post.endPoint, this.post.body(this.contactForm))
+      this.http.post(this.post.endPoint, this.post.body(this.contactForm.value))
         .subscribe({
           next: (response) => {
             this.clearForm();
@@ -58,9 +54,8 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => this.showMessage(),
         });
-
     } else {
       // Markieren Sie die Formularfelder, die nicht gültig sind
       Object.keys(this.contactForm.controls).forEach(field => {
@@ -72,7 +67,13 @@ export class ContactComponent {
     }
   }
 
-  ngOnInit(): void {
+  showMessage() {
+    this.mailSent = true;
+    const duration = 3500;
+    const timer$ = timer(duration);
+    timer$.pipe(take(1)).subscribe(() => {
+      this.mailSent = false;
+    });
   }
 
   scrollToTop() {
@@ -81,8 +82,12 @@ export class ContactComponent {
 
   clearForm() {
     this.isSubmitted = false;
+    this.mailSent = true;
     this.contactForm.reset();
   };
-
 }
+
+
+
+
 

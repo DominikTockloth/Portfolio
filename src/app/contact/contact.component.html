@@ -12,7 +12,8 @@
             <span>{{ "developer"|translate }} <span class="fs-weight">{{ "touchOne"|translate }}</span></span>
         </div>
 
-        <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="right" data-aos="zoom-in-up" data-aos-duration="2500">
+        <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="right" data-aos="zoom-in-up"
+            data-aos-duration="2500">
             <!---------------  name field  -------------------------------->
             <div class="input-area">
                 <input required placeholder="{{'y-name' | translate}}" type="text" name="name" formControlName="name"
@@ -47,15 +48,14 @@
                 <span class="fs-red "
                     *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">{{"message"|translate}}</span>
             </div>
-           
+
             <div class="btn-container"><button class="disabled"
                     [class.disabled]="contactForm.invalid">{{"btnContact"|translate }} </button></div>
 
             <div class="scroll-up"><a (click)="scrollToTop()"><img src="./../../assets/img/scroll-ub-arrow.png"></a>
             </div>
-
-            <div class="success-email" *ngIf="isSubmitted"><span class="span-mail">{{"mailSent"|translate }}</span>
-            </div>
         </form>
+        <div class="success-email" *ngIf="mailSent"><span class="span-mail">{{"mailSent"|translate }}</span>
+        </div>
     </div>
 </div>
