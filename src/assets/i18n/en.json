@@ -30,6 +30,9 @@
     "touchThree": "Get in touch",
     "mailSent": "Your e-mail has been sent successfully",
     "imprint":"Imprint",
-    "privacy":"privacy policy"
+    "privacy":"privacy policy",
+    "read":"I've read the",
+    "policy":"privacy policy",
+    "agree":"and agree to the processing of my data as outlined."
 
 }

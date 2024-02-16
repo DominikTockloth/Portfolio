@@ -15,7 +15,7 @@
     "problem": "Haben Sie ein Problem , dass es zu lösen gibt ?",
     "contactText": "Kontaktieren Sie mich über dieses Formular, ich freue mich von Ihnen zu hören, Ihre Ideen kennenzulernen und durch meine Arbeit zu Ihren Projekten beizutragen.",
     "developer": "Brauchen Sie einen Frontend Entwickler?",
-    "touchOne": "Contact me!",
+    "touchOne": "Schreiben Sie mich an!",
     "y-name": "Dein Name",
     "y-mail": "Deine E-Mail",
     "y-message": "Deine Nachricht....",
@@ -30,5 +30,8 @@
     "touchThree": "Kontakt aufnehmen",
     "mailSent": "Ihre Mail wurde erfolgreich gesendet",
     "imprint":"Impressum",
-    "privacy":"Datenschutz"
+    "privacy":"Datenschutz",
+    "read":"Ich habe die ",
+    "policy":"Datenschutzrichtlinie",
+    "agree":" gelesen und stimme der Verarbeitung meiner Daten gemäß den darin dargelegten Bedingungen zu."
 }

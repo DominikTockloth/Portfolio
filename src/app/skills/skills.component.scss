@@ -9,13 +9,12 @@ $purple: #9747FF;
     background-position-y: bottom;
     background-position-x: left;
     background-color: $darkblue;
-    padding: 170px 100px;
+    padding: 120px 100px;
     display: flex;
     width: 100%;
     min-height: 400px;
     color: white;
-    margin-bottom: 200px;
-
+    margin-bottom: 50px;
     .skills-icons {
         width: 50%;
         display: flex;
@@ -155,7 +154,7 @@ $purple: #9747FF;
 
 @media(max-width:500px) {
     .skills-main {
-        padding: 170px 20px !important;
+        padding: 120px 20px !important;
     }
 
     h2 {
@@ -181,7 +180,7 @@ $purple: #9747FF;
 @media(max-width:400px) {
 
     .skills-main {
-        padding: 105px 20px !important;
+        padding: 120px 20px !important;
         gap: 30px !important;
     }
 

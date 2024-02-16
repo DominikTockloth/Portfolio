@@ -1,19 +1,19 @@
 <div class="main" id="contact">
-    <div class="headline-content" data-aos="fade-right" data-aos-duration="3000">
+    <div class="headline-content" data-aos="fade-right" data-aos-duration="900">
         <div class="border"></div>
         <div class="headline">
             <h2>{{ "contact"|translate }}</h2>
         </div>
     </div>
     <div class="content">
-        <div class="left" data-aos="fade-right" data-aos-duration="2000">
+        <div class="left" data-aos="fade-right" data-aos-duration="1000">
             <h3>{{ "problem"|translate }}</h3>
             <p>{{ "contactText"|translate }}</p>
             <span>{{ "developer"|translate }} <span class="fs-weight">{{ "touchOne"|translate }}</span></span>
         </div>
 
         <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="right" data-aos="zoom-in-up"
-            data-aos-duration="2500">
+            data-aos-duration="1400" data-aos-delay="300">
             <!---------------  name field  -------------------------------->
             <div class="input-area">
                 <input required placeholder="{{'y-name' | translate}}" type="text" name="name" formControlName="name"
@@ -48,9 +48,11 @@
                 <span class="fs-red "
                     *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">{{"message"|translate}}</span>
             </div>
-
-            <div class="btn-container"><button class="disabled"
-                    [class.disabled]="contactForm.invalid">{{"btnContact"|translate }} </button></div>
+            <div class="agree"><input type="checkbox" formControlName="isChecked">{{ "read"|translate}}<a
+                    href="imprint">{{"policy"|translate}}</a> {{
+                "agree"|translate}}</div>
+            <div class="btn-container"><button  [ngClass]="{'disabled': contactForm.invalid || !contactForm.get('isChecked')?.value}" [disabled]="contactForm.invalid || !contactForm.get('isChecked')?.value"
+                    >{{"btnContact"|translate }} </button></div>
 
             <div class="scroll-up"><a (click)="scrollToTop()"><img src="./../../assets/img/scroll-ub-arrow.png"></a>
             </div>
@@ -59,3 +61,5 @@
         </div>
     </div>
 </div>
+
+[class.disabled]="contactForm.invalid && checkbox.isChecked"

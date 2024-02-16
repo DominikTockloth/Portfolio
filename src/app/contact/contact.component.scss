@@ -151,28 +151,34 @@ $purple: #9747FF;
 
 .agree {
     display: flex;
+    width: 100%;
+    align-items: center;
     gap: 7px;
     color: white;
     font-size: 14px;
+    min-height: 90px;
+
+    input {
+        height: 16px;
+        width: 16px;
+        background-color: $purple !important;
+        &:hover {
+            cursor: pointer;
+        }
+        &:checked {
+            background-color: $green !important;
+        }
+    }
+
 
     a {
         text-decoration: none !important;
-        font-size: 16px ;
+        font-size: 16px;
         font-weight: 700;
         cursor: pointer;
 
         &:hover {
             color: $green !important;
-        }
-    }
-
-    img {
-        height: 21px;
-        width: 21px;
-        object-fit: cover;
-
-        &:hover {
-            cursor: pointer;
         }
     }
 }
@@ -242,14 +248,14 @@ $purple: #9747FF;
     align-items: center;
     text-align: center;
     background-color: $darkblue;
-    opacity: 0.85;  
+    opacity: 0.85;
 }
 
-.span-mail{
+.span-mail {
     color: white !important;
     font-size: 65px !important;
     font-weight: 700 !important;
-  }
+}
 
 //************************  Responsive  ***************************************//
 
@@ -287,7 +293,7 @@ $purple: #9747FF;
         margin-left: -32px !important;
     }
 
-    .span-mail{
+    .span-mail {
         font-size: 45px !important;
     }
 }

@@ -57,13 +57,16 @@
     .border {
         width: 60px !important;
     }
+
     .portfolio-main {
         margin-top: 115px !important;
         padding: 0px 20px !important;
     }
+
     .portfolio-content {
         padding: 0px 60px !important;
     }
+
     .sub-headline {
         justify-content: center !important;
         font-size: 20px !important;
@@ -79,22 +82,28 @@
         height: 360px !important;
         width: 339px !important;
     }
+
     .portfolio-content {
         padding: 0px 20px !important;
     }
+
     .portfolio-text p {
         font-size: 18px !important;
     }
+
     .buttons {
         gap: unset !important;
     }
+
     .buttons-flex-end {
         gap: unset !important;
     }
+
     .test {
         padding: 15px 15px !important;
         font-size: 18px !important;
     }
+
     .github {
         padding: 15px 15px !important;
         font-size: 19px !important;
@@ -102,9 +111,15 @@
 }
 
 @media(max-width:450px) {
+
+    .headline-content {
+        padding-top: 95px !important;
+    }
+
     h1 {
         margin-right: unset !important;
     }
+
     .border {
         display: none !important;
     }

@@ -28,7 +28,8 @@ export class ContactComponent {
     this.contactForm = this.foBu.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
+      isChecked: [false]
     });
   }
 
