@@ -290,8 +290,8 @@
     .portrait {
         top: -6px !important;
         height: 441px !important;
-        width: 300px !important;
-        left: 71px !important;
+        width: 340px !important;
+        left: 58px !important;
     }
 
     .headline-container {
@@ -306,7 +306,7 @@
     }
 
     .portrait {
-        left: 53px !important;
+        left: 15px !important;
         top: 9px !important;
     }
 
@@ -326,7 +326,12 @@
     }
 
     .portrait {
-        left: 30px !important;
+        left: 0px !important;
         top: 18px !important;
     }
+
+    .talk-btn{
+        margin-left: -75px !important;
+    }
 }
+
