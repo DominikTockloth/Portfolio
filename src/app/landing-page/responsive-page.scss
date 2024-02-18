@@ -42,7 +42,7 @@
         left: 303px !important;
         top: -54px !important;
         height: 700px !important;
-        width: 473px !important;
+        width: 530px !important;
     }
 
     .shape {
@@ -140,7 +140,7 @@
     }
 }
 
-@media(max-width:715px) {
+@media(max-width:718px) {
     .shadow {
         left: 15px !important;
         top: unset !important;
@@ -149,10 +149,10 @@
     }
 
     .portrait {
-        left: 82px !important;
-        top: -5px !important;
-        height: 492px !important;
-        width: 352px !important;
+        left: 50px !important;
+        top: -40px !important;
+        height: 545px !important;
+        width: 441px !important;
     }
 
     .shape {
@@ -192,7 +192,7 @@
     }
 }
 
-@media(max-width:570px) {
+@media(max-width:600px) {
 
     .headline-container {
         margin-left: 143px !important;
@@ -203,7 +203,7 @@
     }
 
     .portrait {
-        left: 15px !important;
+        left: -14px !important;
     }
 
     .rotate {
@@ -229,7 +229,7 @@
     }
 }
 
-@media(max-width:500px) {
+@media(max-width:545px) {
 
     .main {
         padding: 0px 0px !important;
@@ -249,7 +249,7 @@
     .portrait {
         top: -15px !important;
         height: 491px !important;
-        width: 334px !important;
+        width: 410px !important;
         left: 71px !important;
     }
 
@@ -279,7 +279,16 @@
 
 }
 
-@media(max-width:435px) {
+@media(max-width:489px) {
+    .portrait {
+        top: -14px !important;
+        height: 470px !important;
+        width: 410px !important;
+        left: 34px !important;
+    }
+}
+
+@media(max-width:452px) {
     .shadow {
         left: 40px !important;
         top: -30px !important;
@@ -290,12 +299,21 @@
     .portrait {
         top: -6px !important;
         height: 441px !important;
-        width: 340px !important;
-        left: 58px !important;
+        width: 370px !important;
+        left: 44px !important;
     }
 
     .headline-container {
         margin-left: 165px !important;
+    }
+}
+
+@media(max-width:422px) {
+    .portrait {
+        top: 25px !important;
+        height: 395px !important;
+        width: 340px !important;
+        left: 20px !important;
     }
 }
 
@@ -330,8 +348,13 @@
         top: 18px !important;
     }
 
-    .talk-btn{
+    .talk-btn {
         margin-left: -75px !important;
     }
 }
 
+@media(min-width:2500px) {
+    .shape {
+        display: none !important;
+    }
+}

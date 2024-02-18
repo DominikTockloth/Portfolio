@@ -11,7 +11,8 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [AboutMeComponent , TranslateModule],
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss', './responsive-page.scss','./responsive-big-page.scss']
+  styleUrls: ['./landing-page.component.scss', './responsive-page.scss'
+]
 })
 
 export class LandingPageComponent {
