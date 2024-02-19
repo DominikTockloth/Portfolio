@@ -1,84 +1,5 @@
 /********************************************  Responsive  ******************************************/
-
-@media(max-width:1500px) {
-    .name {
-        font-size: 60px !important;
-    }
-
-    .job {
-        font-size: 50px !important;
-        margin-left: -34px !important;
-        margin-top: -37px !important;
-    }
-
-    .rotate {
-        font-size: 43px !important;
-        margin-left: -110px !important;
-        margin-top: -56px !important;
-        margin-right: -15px !important;
-    }
-}
-
-@media(max-width:1250px) {
-
-    .main {
-        padding: 0px 100px !important;
-    }
-
-    .headline-container {
-        margin-left: 330px !important;
-        height: 175px !important;
-        top: 557px !important;
-        z-index: 5 !important;
-    }
-
-    .shadow {
-        left: 199px !important;
-        height: 780px !important;
-        width: 700px !important;
-    }
-
-    .portrait {
-        left: 303px !important;
-        top: -54px !important;
-        height: 700px !important;
-        width: 530px !important;
-    }
-
-    .shape {
-        height: 385px !important;
-        top: 344px !important;
-        left: -108px !important;
-    }
-
-    .social-media-links {
-        padding-top: 50px !important;
-    }
-
-    .scroll {
-        display: none;
-    }
-}
-
-@media(max-width:1120px) {
-    .headline-container {
-        margin-left: 250px !important;
-    }
-
-    .shadow {
-        left: 104px !important;
-    }
-
-    .portrait {
-        left: 211px !important;
-    }
-
-    .shape {
-        height: 385px !important;
-        top: 344px !important;
-        left: -108px !important;
-    }
-}
+// more media queries in landing-page.scss
 
 @media(max-width:1000px) {
     .shadow {
@@ -87,48 +8,38 @@
         height: 630px !important;
         width: 560px !important;
     }
-
     .portrait {
         left: 82px !important;
     }
-
     .shape {
         height: 250px !important;
         top: 420px !important;
     }
-
     .headline-container {
         margin-left: 138px !important;
     }
-
     .rotate {
         font-size: 33px !important;
         margin-left: -48px !important;
         margin-top: -72px !important;
         margin-right: -30px !important;
     }
-
     .name {
         margin-left: -30px;
         margin-top: -225px;
         font-size: 45px !important;
     }
-
-
     .job {
         font-size: 38px !important;
         margin-left: -34px !important;
         margin-top: -25px !important;
     }
-
     .mail {
         display: none !important;
     }
-
     .border {
         width: 180px !important;
     }
-
     .links {
         gap: 60px !important;
         margin-left: 25px !important;
@@ -147,132 +58,106 @@
         height: 410px !important;
         width: 375px !important;
     }
-
     .portrait {
         left: 50px !important;
         top: -40px !important;
         height: 545px !important;
         width: 441px !important;
     }
-
     .shape {
         height: 150px !important;
         top: 385px !important;
     }
-
     .headline-container {
         margin-left: 170px !important;
         top: 470px !important;
     }
-
     .rotate {
         font-size: 26px !important;
         margin-left: -108px !important;
         margin-top: -78px !important;
         margin-right: -30px !important;
     }
-
     .name {
         font-size: 38px !important;
         margin-left: -50px !important;
     }
-
     .job {
         font-size: 32px !important;
         margin-left: -51px !important;
         margin-top: -20px !important;
     }
-
     .talk-btn {
         margin-left: -35px !important;
     }
-
     .social-media-links {
         margin-top: -90px !important;
     }
 }
 
 @media(max-width:600px) {
-
     .headline-container {
         margin-left: 143px !important;
     }
-
     .shadow {
         left: -40px !important;
     }
-
     .portrait {
         left: -14px !important;
     }
-
     .rotate {
         font-size: 20px !important;
         margin-left: -108px !important;
         margin-top: -87px !important;
         margin-right: -38px !important;
     }
-
     .name {
         font-size: 30px !important;
         margin-left: -50px !important;
     }
-
     .job {
         font-size: 25px !important;
         margin-left: -51px !important;
         margin-top: -17px !important;
     }
-
     .border {
         width: 100px !important;
     }
 }
 
 @media(max-width:545px) {
-
     .main {
         padding: 0px 0px !important;
     }
-
     .headline-container {
         margin-left: 214px !important;
     }
-
     .shadow {
         left: 87px !important;
         top: -30px !important;
         height: 410px !important;
         width: 340px !important;
     }
-
     .portrait {
         top: -15px !important;
         height: 491px !important;
         width: 410px !important;
         left: 71px !important;
     }
-
     .shape {
         top: 357px !important;
         left: -8px !important;
     }
-
-
-
     .link-wrapper {
         gap: 10px !important;
     }
-
     .links {
         gap: 45px !important;
     }
-
     .links img {
         height: 30px !important;
         width: 30px !important;
     }
-
     .border {
         width: 72px !important;
     }
@@ -295,14 +180,12 @@
         height: 399px !important;
         width: 300px !important;
     }
-
     .portrait {
         top: -6px !important;
         height: 441px !important;
         width: 370px !important;
         left: 44px !important;
     }
-
     .headline-container {
         margin-left: 165px !important;
     }
@@ -322,12 +205,10 @@
         left: 46px !important;
         top: -25px !important;
     }
-
     .portrait {
         left: 15px !important;
         top: 9px !important;
     }
-
     .headline-container {
         margin-left: 144px !important;
     }
@@ -337,17 +218,14 @@
     .headline-container {
         margin-left: 128px !important;
     }
-
     .shadow {
         left: 6px !important;
         top: -27px !important;
     }
-
     .portrait {
         left: 0px !important;
         top: 18px !important;
     }
-
     .talk-btn {
         margin-left: -75px !important;
     }
