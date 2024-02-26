@@ -34,7 +34,7 @@ export class ContactComponent {
   }
 
   post = {
-    endPoint: 'https://dominik-tockloth.de/sendMail.php',
+    endPoint: 'https://dominik-tockloth.de/send-mail/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -46,7 +46,6 @@ export class ContactComponent {
 
   onSubmit() {
     if (this.contactForm.valid && !this.isSubmitted) {
-      // Formular ist gültig, hier können Sie die Sendelogik implementieren
       this.http.post(this.post.endPoint, this.post.body(this.contactForm.value))
         .subscribe({
           next: (response) => {
@@ -58,7 +57,6 @@ export class ContactComponent {
           complete: () => this.showMessage(),
         });
     } else {
-      // Markieren Sie die Formularfelder, die nicht gültig sind
       Object.keys(this.contactForm.controls).forEach(field => {
         const control = this.contactForm.get(field);
         if (control?.invalid) {
