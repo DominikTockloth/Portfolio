@@ -10,16 +10,19 @@ $purple: #9747FF;
     padding-top: 90px;
     width: 100%;
     gap: 50px;
+
     h1 {
         font-size: 90px;
         color: white;
         margin-right: 110px;
     }
+
     .border {
         height: 4px;
         width: 110px;
         background-color: $purple;
     }
+
     .border-big {
         height: 4px;
         width: calc(40% - 100px);
@@ -53,6 +56,7 @@ $purple: #9747FF;
     padding: 0px 100px;
     margin-top: 180px;
     margin-bottom: -350px;
+
     .portfolio-content {
         display: flex;
         align-items: center;
@@ -62,21 +66,25 @@ $purple: #9747FF;
         margin-bottom: 30px;
         gap: 80px;
     }
+
     .portfolio-text {
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
+
         h3 {
             font-size: 36px;
             font-weight: 700;
             color: $purple;
             margin-bottom: 20px;
         }
+
         span {
             font-size: 27px;
             color: $green;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 20px;
             color: white;
@@ -88,16 +96,23 @@ $purple: #9747FF;
         width: 550px;
         object-fit: contain;
     }
+
+    .cover {
+        object-fit: cover !important;
+    }
+
     .reverse {
         display: flex;
         flex-direction: row-reverse;
         text-align: right;
     }
+
     .buttons-flex-end {
         display: flex;
         justify-content: flex-end;
         gap: 80px;
         margin-top: 20px;
+
         >.test {
             font-size: 23px;
             padding: 15px 30px;
@@ -105,6 +120,7 @@ $purple: #9747FF;
             border-radius: 10px;
             text-decoration: none;
             color: white;
+
             &:hover {
                 cursor: pointer;
                 background-color: $green;
@@ -119,6 +135,7 @@ $purple: #9747FF;
             color: white;
             text-decoration: none;
             background-color: $darkblue;
+
             &:hover {
                 cursor: pointer;
                 background-color: $green;
@@ -131,6 +148,7 @@ $purple: #9747FF;
         justify-content: flex-start;
         gap: 80px;
         margin-top: 20px;
+
         >.test {
             font-size: 23px;
             padding: 15px 30px;
@@ -138,6 +156,7 @@ $purple: #9747FF;
             border-radius: 10px;
             text-decoration: none;
             color: white;
+
             &:hover {
                 cursor: pointer;
                 background-color: $green;
@@ -152,6 +171,7 @@ $purple: #9747FF;
             color: white;
             text-decoration: none;
             background-color: $darkblue;
+
             &:hover {
                 cursor: pointer;
                 background-color: $green;
@@ -161,4 +181,3 @@ $purple: #9747FF;
     }
 
 }
-
